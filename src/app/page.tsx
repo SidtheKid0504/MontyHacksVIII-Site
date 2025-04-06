@@ -41,7 +41,7 @@ export default function Home() {
         answer: 'The theme for this year is Exploration!'
       },
       {
-        question: "What&apos;s the cost?",
+        question: "What's the cost?",
         answer: "It&apos;s completely free! Thanks to our sponsors, we provide food, merch, and prizes at no cost to you."
       },
       {
@@ -78,7 +78,7 @@ export default function Home() {
         answer: "You can compete solo or in teams of up to 4. You can form a team beforehand or join one at the event."
       },
       {
-        question: "What if I don&apos;t have a team?",
+        question: "What if I don't have a team?",
         answer: "No worries! You can compete alone or also find other people interested in forming a team on the day of the hackathon."
       },
     ]
