@@ -34,15 +34,15 @@ export default function Home() {
       },
       {
         question: "When is MontyHacks VIII?",
-        answer: "MontyHacks VIII is on May 31st, 2025. It’s a one-day event packed with coding, workshops, and prizes!"
+        answer: "MontyHacks VIII is on May 31st, 2025. It&apos;s a one-day event packed with coding, workshops, and prizes!"
       },
       {
         question: "What is this year's theme?",
-        answer: 'The theme for this year is "Exploration"!'
+        answer: 'The theme for this year is Exploration!'
       },
       {
-        question: "What’s the cost?",
-        answer: "It’s completely free! Thanks to our sponsors, we provide food, merch, and prizes at no cost to you."
+        question: "What&apos;s the cost?",
+        answer: "It&apos;s completely free! Thanks to our sponsors, we provide food, merch, and prizes at no cost to you."
       },
       {
         question: "What can I win?",
@@ -50,7 +50,7 @@ export default function Home() {
       },
       {
         question: "What should I bring?",
-        answer: "Bring your laptop, charger, and excitement! We’ll provide everything else, including food and resources."
+        answer: "Bring your laptop, charger, and excitement! We&apos;ll provide everything else, including food and resources."
       },
       {
         question: "I still have questions!",
@@ -67,7 +67,7 @@ export default function Home() {
     registration: [
       {
         question: "Who can attend?",
-        answer: "MontyHacks VIII is open to middle and high school students ages 13 and up. You don’t need any prior experience!"
+        answer: "MontyHacks VIII is open to middle and high school students ages 13 and up. You don&apos;t need any prior experience!"
       },
       {
         question: "When is the registration deadline?",
@@ -78,7 +78,7 @@ export default function Home() {
         answer: "You can compete solo or in teams of up to 4. You can form a team beforehand or join one at the event."
       },
       {
-        question: "What if I don’t have a team?",
+        question: "What if I don&apos;t have a team?",
         answer: "No worries! You can compete alone or also find other people interested in forming a team on the day of the hackathon."
       },
     ]
@@ -156,7 +156,7 @@ export default function Home() {
         <h2 className={styles.aboutHeader}>About</h2>
         <div className={styles.content}>
           <p>
-            MontyHacks VIII is a one-day event where middle and high school students from all over the country come together to create tech projects in just one day. This year's theme is "Exploration," and we're excited to have a variety of projects to showcase and inspire our attendees.
+            MontyHacks VIII is a one-day event where middle and high school students from all over the country come together to create tech projects in just one day. This year&apos;s theme is &apos;Exploration&apos; and we&apos;re excited to have a variety of projects to showcase and inspire our attendees.
           </p>
         </div>
       </section>
