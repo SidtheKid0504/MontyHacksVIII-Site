@@ -4,9 +4,11 @@ import { useRef, useState } from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
 import hotAirBalloon1 from '../../public/hot-air-balloon-1.svg';
+import logo from '../../public/logo.svg';
 import { FaInstagram, FaEnvelope, FaDiscord } from 'react-icons/fa';
 
 export default function Home() {
+  const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const scheduleRef = useRef(null);
   const sponsorsRef = useRef(null);
@@ -34,7 +36,7 @@ export default function Home() {
       },
       {
         question: "When is MontyHacks VIII?",
-        answer: "MontyHacks VIII is on May 31st, 2025. It&apos;s a one-day event packed with coding, workshops, and prizes!"
+        answer: "MontyHacks VIII is on May 31st, 2025. It's a one-day event packed with coding, workshops, and prizes!"
       },
       {
         question: "What is this year's theme?",
@@ -42,7 +44,7 @@ export default function Home() {
       },
       {
         question: "What's the cost?",
-        answer: "It&apos;s completely free! Thanks to our sponsors, we provide food, merch, and prizes at no cost to you."
+        answer: "It's completely free! Thanks to our sponsors, we provide food, merch, and prizes at no cost to you."
       },
       {
         question: "What can I win?",
@@ -50,7 +52,7 @@ export default function Home() {
       },
       {
         question: "What should I bring?",
-        answer: "Bring your laptop, charger, and excitement! We&apos;ll provide everything else, including food and resources."
+        answer: "Bring your laptop, charger, and excitement! We'&apos;'ll provide everything else, including food and resources."
       },
       {
         question: "I still have questions!",
@@ -119,19 +121,19 @@ export default function Home() {
       <div className={styles.floatingCloud8}></div>
       <div className={styles.floatingCloud9}></div>
       <nav className={styles.navbar}>
-        <h1 className={styles.logo}>MontyHacks VIII</h1>
+        <Image src={logo} width={100} height={100} alt="logo"/>
         <button className={styles.menuToggle} onClick={toggleMenu}>
           {isMenuOpen ? '✕' : '☰'}
         </button>
         <ul className={`${styles.navLinks} ${isMenuOpen ? styles.navLinksOpen : ''}`}>
-          <li><button onClick={() => { scrollToSection(null); toggleMenu(); }}>Home</button></li>
+          <li><button onClick={() => { scrollToSection(homeRef); toggleMenu(); }}>Home</button></li>
           <li><button onClick={() => { scrollToSection(aboutRef); toggleMenu(); }}>About</button></li>
           <li><button onClick={() => { scrollToSection(scheduleRef); toggleMenu(); }}>Schedule</button></li>
           <li><button onClick={() => { scrollToSection(faqRef); toggleMenu(); }}>FAQ</button></li>
           <li><button onClick={() => { scrollToSection(sponsorsRef); toggleMenu(); }}>Sponsors</button></li>
         </ul>
       </nav>
-      <section className={styles.hero} id="home">
+      <section className={styles.hero} ref={homeRef} id="home">
         <div className={styles.heroContent}>
           <div className={styles.heroImage}>
             <Image src={hotAirBalloon1} width={500} height={500} alt="" />

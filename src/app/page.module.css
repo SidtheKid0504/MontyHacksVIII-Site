@@ -257,7 +257,7 @@
   display: flex;
   list-style: none;
   gap: 2rem;
-  margin-right: 0.5rem;
+  margin-right: 0.75rem;
 }
 
 .navLinks button {
