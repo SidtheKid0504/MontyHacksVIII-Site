@@ -121,7 +121,7 @@ export default function Home() {
       <div className={styles.floatingCloud8}></div>
       <div className={styles.floatingCloud9}></div>
       <nav className={styles.navbar}>
-        <Image src={logo} width={100} height={100} alt="logo"/>
+        <Image src={logo} width={150} height={150} alt="logo"/>
         <button className={styles.menuToggle} onClick={toggleMenu}>
           {isMenuOpen ? '✕' : '☰'}
         </button>
@@ -264,7 +264,7 @@ export default function Home() {
               <FaInstagram />
             </a>
             <a
-              href=""
+              href="https://discord.gg/hm5RrqZY"
               className={styles.socialLink}
               target="_blank"
               rel="noopener noreferrer"
