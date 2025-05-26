@@ -4,6 +4,14 @@ import { useRef, useState } from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
 import hotAirBalloon1 from '../../public/hot-air-balloon-1.svg';
+import sponsor1 from '../../public/sponsor1.png';
+import sponsor2 from '../../public/sponsor2.png';
+import sponsor3 from '../../public/sponsor3.png';
+import sponsor4 from '../../public/sponsor4.png';
+import sponsor5 from '../../public/sponsor5.png';
+import sponsor6 from '../../public/sponsor6.png';
+import sponsor7 from '../../public/sponsor7.png';
+
 import logo from '../../public/logo.svg';
 import { FaInstagram, FaEnvelope, FaDiscord } from 'react-icons/fa';
 
@@ -32,7 +40,7 @@ export default function Home() {
     general: [
       {
         question: "What is a hackathon?",
-        answer: "A hackathon is a fun event where you team up with friends to create tech projects—like apps, games, or websites—in just one day! It’s a great way to learn, build, and have fun."
+        answer: "A hackathon is a fun event where you team up with friends to create tech projects—like apps, games, or websites—in just one day! It's a great way to learn, build, and have fun."
       },
       {
         question: "When is MontyHacks VIII?",
@@ -52,7 +60,7 @@ export default function Home() {
       },
       {
         question: "What should I bring?",
-        answer: "Bring your laptop, charger, and excitement! We'&apos;'ll provide everything else, including food and resources."
+        answer: "Bring your laptop, charger, and excitement! We'll provide everything else, including food and resources."
       },
       {
         question: "I still have questions!",
@@ -69,7 +77,7 @@ export default function Home() {
     registration: [
       {
         question: "Who can attend?",
-        answer: "MontyHacks VIII is open to middle and high school students ages 13 and up. You don&apos;t need any prior experience!"
+        answer: "MontyHacks VIII is open to middle and high school students ages 13 and up. You don't need any prior experience!"
       },
       {
         question: "When is the registration deadline?",
@@ -96,6 +104,17 @@ export default function Home() {
     { time: "7:00 PM", icon: "⏰", event: "Hacking Ends", location: "Commons" },
     { time: "7:30 PM", icon: "⚖", event: "Judging Starts", location: "Commons" },
     { time: "9:00 PM", icon: "🏆", event: "Closing Ceremony & Awards", location: "MPAC" },
+  ];
+
+  const sponsorLogos = [
+    { src: sponsor1, alt: 'Sponsor 1', width: 200, height: 80 },
+    { src: sponsor2, alt: 'Sponsor 2', width: 200, height: 80 },
+    { src: sponsor3, alt: 'Sponsor 3', width: 200, height: 80 },
+    { src: sponsor4, alt: 'Sponsor 4', width: 200, height: 80 },
+    { src: sponsor5, alt: 'Sponsor 5', width: 200, height: 80 },
+    { src: sponsor6, alt: 'Sponsor 6', width: 200, height: 80 },
+    { src: sponsor7, alt: 'Sponsor 7', width: 200, height: 80 },
+    // Add more sponsor logos as needed
   ];
 
   const toggleQuestion = (index) => {
@@ -158,9 +177,16 @@ export default function Home() {
         <h2 className={styles.aboutHeader}>About</h2>
         <div className={styles.content}>
           <p>
-            MontyHacks VIII is a one-day event where middle and high school students from all over the country come together to create tech projects in just one day. This year&apos;s theme is &apos;Exploration&apos; and we&apos;re excited to have a variety of projects to showcase and inspire our attendees.
+            MontyHacks VIII is a one-day event where middle and high school students from all over the country come together to create tech projects in just one day. This year's theme is 'Exploration' and we're excited to have a variety of projects to showcase and inspire our attendees.
           </p>
+          <div className={styles.videoContainer}>
+            <video controls className={styles.video}>
+              <source src="/trailer.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
+        
       </section>
       <section ref={scheduleRef} className={styles.schedule} id="schedule">
         <div className={styles.scheduleContainer}>
@@ -238,7 +264,18 @@ export default function Home() {
               montycompsci@gmail.com
             </a>!
           </p>
-          <div className={styles.sponsorLogos}></div>
+          <div className={styles.sponsorLogos}>
+            {sponsorLogos.map((logo, index) => (
+              <Image
+                key={index}
+                src={logo.src}
+                alt={logo.alt}
+                width={logo.width}
+                height={logo.height}
+                className={styles.sponsorLogo}
+              />
+            ))}
+          </div>
         </div>
       </section>
       <footer className={styles.footer}>

@@ -409,7 +409,6 @@
     font-size: 1rem;
   }
 }
-
 .section {
   padding: 4rem 1rem;
   text-align: center;
@@ -435,6 +434,22 @@
   color: #ffefa6;
 }
 
+.videoContainer {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 @media (max-width: 768px) {
   .section {
     padding: 2rem 1rem;
@@ -446,6 +461,9 @@
   .content p {
     font-size: 1rem;
     line-height: 1.6;
+  }
+  .videoContainer {
+    margin-top: 1.5rem;
   }
 }
 
@@ -756,6 +774,9 @@
   }
 }
 
+/* Existing CSS remains unchanged until sponsors section */
+
+/* Sponsors Section */
 .sponsors {
   position: relative;
   padding: 4rem 1rem;
@@ -783,29 +804,43 @@
   color: #ffefa6;
   margin-bottom: 2rem;
 }
-
 .sponsorLogos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 1rem;
+  justify-content: center; /* Center items horizontally */
 }
 
 .sponsorLogo {
-  background: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #104f55;
+  /* background: rgba(255, 255, 255, 0.1); */
+  /* border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 150px;
-  height: 60px;
+  width: 200px; /* Fixed width for each logo */
+  height: 80px; /* Fixed height for each logo */
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsorLogo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .sponsorLogos {
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  .sponsorLogo {
+    width: 120px; /* Smaller width on mobile */
+    height: 48px; /* Smaller height on mobile */
+  }
 }
 
 @media (max-width: 768px) {
@@ -821,15 +856,15 @@
     margin-bottom: 1.5rem;
   }
   .sponsorLogos {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 1rem;
+    padding: 0.5rem;
   }
   .sponsorLogo {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    min-width: 120px;
-    height: 50px;
+    height: auto;
   }
 }
+
 
 .footer {
   padding: 2rem 1rem;
