@@ -180,9 +180,6 @@ export default function Home() {
           <p>
             MontyHacks VIII is a one-day event where middle and high school students from all over the country come together to create tech projects in just one day. This year&apos;s theme is &apos;Exploration&apos; and we&apos;re excited to have a variety of projects to showcase and inspire our attendees.
           </p>
-          <div className={styles.videoContainer}>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RNlb4LGruJ0?si=QMH5Cj5I2Lewaauh" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>          
-          </div>
         </div>
         
       </section>
