@@ -95,15 +95,16 @@ export default function Home() {
   };
 
   const scheduleData = [
-    { time: "8:00 AM", icon: "→", event: "Check In", location: "MHS Main Entrance" },
-    { time: "8:30 AM", icon: "🎤", event: "Opening Ceremony", location: "MPAC" },
-    { time: "9:00 AM", icon: "💻", event: "Hacking Starts & Team Formation", location: "Commons" },
-    { time: "9:30 AM", icon: "🍳", event: "Breakfast", location: "Commons" },
-    { time: "1:00 PM", icon: "🍕", event: "Lunch", location: "Commons" },
-    { time: "6:00 PM", icon: "🍔", event: "Dinner", location: "Commons" },
-    { time: "7:00 PM", icon: "⏰", event: "Hacking Ends", location: "Commons" },
-    { time: "7:30 PM", icon: "⚖", event: "Judging Starts", location: "Commons" },
-    { time: "9:00 PM", icon: "🏆", event: "Closing Ceremony & Awards", location: "MPAC" },
+    { time: "7:30 AM", icon: "→", event: "Check In", location: "Under Science Wing" },
+    { time: "8:30 AM", icon: "🎤", event: "Opening Ceremony", location: "Gym" },
+    { time: "9:00 AM", icon: "💻", event: "Hacking Starts & Team Formation", location: "Aux Gym/Gym" },
+    { time: "9:30 AM", icon: "🍳", event: "Breakfast", location: "Snack Shack" },
+    { time: "10:00 AM", icon: "🎮", event: "Mario Kart Tournament Starts", location: "Aux Gym" },
+    { time: "10:00 AM", icon: "⚙️", event: "Latent AI Workshop/Tech Demo", location: "Gym" },
+    { time: "1:00 PM", icon: "🍕", event: "Lunch", location: "Snack Shack" },
+    { time: "6:00 PM", icon: "🍔", event: "Dinner", location: "Snack Shack" },
+    { time: "6:30 PM", icon: "⏰", event: "Hacking Ends and Judging Starts", location: "Gym" },
+    { time: "8:00 PM", icon: "🏆", event: "Closing Ceremony & Awards", location: "Gym" },
   ];
 
   const sponsorLogos = [
