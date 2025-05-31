@@ -11,6 +11,7 @@ import sponsor4 from '../../public/sponsor4.png';
 import sponsor5 from '../../public/sponsor5.png';
 import sponsor6 from '../../public/sponsor6.png';
 import sponsor7 from '../../public/sponsor7.png';
+import sponsor8 from '../../public/sponsor8.png';
 
 import logo from '../../public/logo.svg';
 import { FaInstagram, FaEnvelope, FaDiscord } from 'react-icons/fa';
@@ -117,6 +118,7 @@ export default function Home() {
     { src: sponsor5, alt: 'Sponsor 5', width: 200, height: 80 },
     { src: sponsor6, alt: 'Sponsor 6', width: 200, height: 80 },
     { src: sponsor7, alt: 'Sponsor 7', width: 200, height: 80 },
+    { src: sponsor8, alt: 'Sponsor 8', width: 200, height: 80 },
     // Add more sponsor logos as needed
   ];
 
